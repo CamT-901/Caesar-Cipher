@@ -1,14 +1,17 @@
 # Caesar-Cipher
 #Encrypt and Decrypt Strings
+
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
             'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
             
 #check if the user wants to encrypt or decrypt the message
+
 direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
 text = input("Type your message:\n").lower()
 shift = int(input("Type the shift number:\n"))
 
 #create a function that can encrypt and decrypt
+
 def caesar(start_text, shift_amount, cipher_direction):
     end_text =""
     if cipher_direction == "decode":
